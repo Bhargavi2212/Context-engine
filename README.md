@@ -374,4 +374,4 @@ VITE_API_BASE_URL=http://localhost:8000/api/v1
 
 ---
 
-Context Engine — Mistral AI Hackathon Edition. See [PROJECT.md](PROJECT.md) for product vision.
+Context Engine - Mistral AI Hackathon Edition. See [PROJECT.md](PROJECT.md) for product vision.
