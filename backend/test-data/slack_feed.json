@@ -1,0 +1,58 @@
+[
+  {
+    "id": "slack_001",
+    "text": "Just had another customer call where they complained about the checkout losing their cart. Third one this week.",
+    "user": "sarah_chen",
+    "channel": "#product-feedback",
+    "timestamp": "2026-03-01T10:15:00Z"
+  },
+  {
+    "id": "slack_002",
+    "text": "Anyone else seeing the dashboard take 10+ seconds to load? Enterprise customers are escalating.",
+    "user": "mike_rodriguez",
+    "channel": "#product-feedback",
+    "timestamp": "2026-03-01T10:22:00Z"
+  },
+  {
+    "id": "slack_003",
+    "text": "BigRetail just threatened to switch to Amplitude if we don't fix checkout by their renewal. That's $48K ARR.",
+    "user": "amy_chen",
+    "channel": "#support-escalations",
+    "timestamp": "2026-03-01T10:35:00Z"
+  },
+  {
+    "id": "slack_004",
+    "text": "standup at 2pm today",
+    "user": "dev_patel",
+    "channel": "#product-feedback",
+    "timestamp": "2026-03-01T10:40:00Z"
+  },
+  {
+    "id": "slack_005",
+    "text": "The mobile app crashed 3 times during my demo with a prospect. Lost the deal. We need the React Native rewrite ASAP.",
+    "user": "hans_mueller",
+    "channel": "#product-feedback",
+    "timestamp": "2026-03-01T11:00:00Z"
+  },
+  {
+    "id": "slack_006",
+    "text": "Positive feedback from DataDriven — they love the new export feature. Said it saved them 2 hours per week.",
+    "user": "sarah_chen",
+    "channel": "#product-feedback",
+    "timestamp": "2026-03-01T11:15:00Z"
+  },
+  {
+    "id": "slack_007",
+    "text": "TechFlow's SSO integration keeps failing. Kevin, can the identity team look at this? They renew in 3 weeks.",
+    "user": "lisa_park",
+    "channel": "#support-escalations",
+    "timestamp": "2026-03-01T11:30:00Z"
+  },
+  {
+    "id": "slack_008",
+    "text": "ok see you then",
+    "user": "dev_patel",
+    "channel": "#product-feedback",
+    "timestamp": "2026-03-01T11:32:00Z"
+  }
+]

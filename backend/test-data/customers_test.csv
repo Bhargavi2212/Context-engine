@@ -1,0 +1,15 @@
+domain,company_name,segment
+acme.com,Acme Corp,SMB
+contoso.io,Contoso Ltd,Enterprise
+fabrikam.com,Fabrikam Inc,Mid-Market
+northwind.com,Northwind Traders,SMB
+adventure-works.com,Adventure Works,Enterprise
+tailspin.com,Tailspin Toys,SMB
+litware.org,Litware Inc,Mid-Market
+wideworld.com,Wide World Importers,Enterprise
+graphicdesign.co,Graphic Design Studio,SMB
+cloudnine.io,Cloud Nine Solutions,Mid-Market
+datatech.com,DataTech Systems,Enterprise
+startup-lab.io,Startup Lab,SMB
+global-logistics.com,Global Logistics Co,Mid-Market
+innovate.dev,Innovate Dev,Enterprise

@@ -1,0 +1,13 @@
+# Production / demo: single service, backend serves frontend static files
+services:
+  context-engine:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - sqlite-data:/app/data
+    env_file: .env
+    restart: unless-stopped
+
+volumes:
+  sqlite-data:
