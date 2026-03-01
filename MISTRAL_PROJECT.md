@@ -787,23 +787,4 @@ Detailed specs for each phase in docs/PHASE_X_SPEC.md.
 | Setup Time | 45-60 min (deploy ML models, configure ES) | 2 min (set API keys) |
 | Infrastructure | Elastic Cloud trial, Kibana | Mistral API key, LangSmith API key |
 
----
 
-## Test Data
-
-Use the same test data from the Elasticsearch version:
-- **Product wizard:** "Acme Analytics" — B2B SaaS analytics platform with 12 product areas, 6 business goals, 4 segments, 5 competitors, 8 teams. Full data in docs/WIZARD_TEST_DATA.md.
-- **Feedback:** ~40 items covering checkout, dashboard, mobile, billing, API, auth. Mix of sources, sentiments, segments. CSV in test-data/feedback_test.csv.
-- **Customers:** ~15 companies with realistic ARR ($1.2K to $48K), health scores (18 to 92), varied renewal dates. CSV in test-data/customers_test.csv.
-
----
-
-## For Judges — Why This Wins
-
-1. **Real product, real problem.** Not a chatbot wrapper. PMs actually need this.
-2. **Multi-agent with handoffs.** Most hackathon teams build single agents. We have 3 specialized agents coordinating through LangGraph.
-3. **Business context is the differentiator.** Everyone can summarize feedback. Nobody connects it to $340K ARR at risk.
-4. **RICE scoring.** Turns feedback into a prioritized backlog, not just a summary.
-5. **Full observability.** LangSmith traces show exactly how each agent reasons.
-6. **The PM demos it.** Having a non-technical teammate use the product proves it's actually intuitive.
-7. **Cursor tells engineers how to build. This tells PMs what to build.**
