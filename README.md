@@ -1,6 +1,6 @@
-# Context Engine — Mistral AI Hackathon Edition
+# Context Engine - Mistral AI Hackathon Edition
 
-**Cursor for PMs** — an always-on feedback intelligence platform that ingests customer feedback from every source, classifies signal from noise, connects complaints to real revenue data, and generates production-ready engineering specs. Multi-agent. Powered by Mistral AI.
+**Cursor for PMs** - an always-on feedback intelligence platform that ingests customer feedback from every source, classifies signal from noise, connects complaints to real revenue data, and generates production-ready engineering specs. Multi-agent. Powered by Mistral AI.
 
 ---
 
@@ -24,13 +24,9 @@
 
 Context Engine is a **production-grade feedback intelligence platform** for Product Managers. It uses a multi-agent system built on Mistral AI + LangChain + LangGraph to help PMs go from scattered customer feedback to prioritized, revenue-aware engineering specs.
 
-This is a **new build** for the Mistral AI Worldwide Hackathon (Feb 28 – Mar 1, 2026). The concept, data models, UX, and business logic are proven — this version rebuilds the backend on Mistral's stack and adds new capabilities (multi-agent, RICE scoring, LangSmith monitoring, MCP connectors).
-
----
-
 ## The Problem
 
-PMs drown in feedback from 6+ sources. They manually check Slack, Jira, support tickets, NPS surveys, app reviews, emails — trying to find patterns. Nobody notices checkout complaints spiked 40% until a customer churns. Nobody connects the Slack message, support ticket, and app store review describing the same problem. Even when they find a pattern, there's no way to prove it matters — no connection to revenue, churn risk, or renewal timelines. So the spec they write is based on gut feel, not data. By the time they finish, customers have already left.
+PMs drown in feedback from 6+ sources. They manually check Slack, Jira, support tickets, NPS surveys, app reviews, emails — trying to find patterns. Nobody notices checkout complaints spiked 40% until a customer churns. Nobody connects the Slack message, support ticket, and app store review describing the same problem. Even when they find a pattern, there's no way to prove it matters - no connection to revenue, churn risk, or renewal timelines. So the spec they write is based on gut feel, not data. By the time they finish, customers have already left.
 
 **Cursor tells engineers how to build. Context Engine tells PMs what to build.**
 
@@ -53,9 +49,9 @@ This context is injected into every agent's system prompt.
 
 ### Step 2: Data Ingestion
 Feedback enters through:
-- **CSV upload** — Slack exports, Jira exports, support tickets, NPS surveys, app reviews
-- **Manual entry** — PM adds individual items
-- **MCP connectors** — Live Slack (Demo mode or Live MCP)
+- **CSV upload** - Slack exports, Jira exports, support tickets, NPS surveys, app reviews
+- **Manual entry** - PM adds individual items
+- **MCP connectors** - Live Slack (Demo mode or Live MCP)
 
 ### Step 3: Classification Pipeline
 Every piece of feedback goes through the same classification pipeline (not an agent — runs on ingest). A single Mistral API call (mistral-medium, JSON mode) returns:
@@ -70,7 +66,7 @@ Every piece of feedback goes through the same classification pipeline (not an ag
   "feature_area": "checkout",
   "team": "Payments Team",
   "urgency": "high",
-  "confidence": 0.91
+  "confidence": ----
 }
 ```
 
@@ -85,18 +81,18 @@ PM can browse feedback with ML badges, filter by product/feature/sentiment/segme
 
 ### Step 6: Multi-Agent Chat
 3 specialized agents orchestrated by LangGraph:
-- **Analyst Agent** — patterns, trends, priorities, RICE scores (7 tools)
-- **Customer Agent** — risk, renewals, health, feedback history (5 tools)
-- **Spec Writer Agent** — generates 4 engineering documents from Analyst + Customer output
+- **Analyst Agent** - patterns, trends, priorities, RICE scores (7 tools)
+- **Customer Agent** - risk, renewals, health, feedback history (5 tools)
+- **Spec Writer Agent** - generates 4 engineering documents from Analyst + Customer output
 
 LangGraph routes questions automatically. All agent activity traced in **LangSmith**.
 
 ### Step 7: Generate Specs
 The multi-agent chain produces 4 documents:
-1. **PRD** — Problem statement, user stories, requirements (P0-P3), success metrics
-2. **Architecture Brief** — Technical approach, data model, API changes, migration
-3. **Engineering Rules** — Constraints, edge cases, accessibility, testing
-4. **Implementation Plan** — Phases, team assignments, timeline, rollout
+1. **PRD** - Problem statement, user stories, requirements (P0-P3), success metrics
+2. **Architecture Brief** - Technical approach, data model, API changes, migration
+3. **Engineering Rules** - Constraints, edge cases, accessibility, testing
+4. **Implementation Plan** - Phases, team assignments, timeline, rollout
 
 Every recommendation cites real feedback with real dollar amounts.
 
@@ -230,7 +226,7 @@ PM message → LangGraph Router
 **Tools:** customer_lookup, at_risk_customers, customer_feedback_history, renewal_tracker, customer_comparison
 
 ### Spec Writer Agent (mistral-large)
-No tools — receives Analyst + Customer output, generates PRD, Architecture, Rules, Implementation Plan.
+No tools - receives Analyst + Customer output, generates PRD, Architecture, Rules, Implementation Plan.
 
 ---
 
@@ -368,13 +364,13 @@ VITE_API_BASE_URL=http://localhost:8000/api/v1
 
 ## Built With
 
-- **Mistral AI** — Classification, embeddings, chat
-- **LangChain / LangGraph** — Agent orchestration
-- **LangSmith** — Tracing
-- **FastAPI** — Backend API
-- **React / Vite / Tailwind** — Frontend
-- **SQLite** — Data store
-- **MCP** — Slack connector (live mode)
+- **Mistral AI** - Classification, embeddings, chat
+- **LangChain / LangGraph** - Agent orchestration
+- **LangSmith** - Tracing
+- **FastAPI** - Backend API
+- **React / Vite / Tailwind** - Frontend
+- **SQLite** - Data store
+- **MCP** - Slack connector (live mode)
 
 ---
 
