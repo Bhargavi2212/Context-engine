@@ -26,7 +26,7 @@ Context Engine is a **production-grade feedback intelligence platform** for Prod
 
 ## The Problem
 
-PMs drown in feedback from 6+ sources. They manually check Slack, Jira, support tickets, NPS surveys, app reviews, emails — trying to find patterns. Nobody notices checkout complaints spiked 40% until a customer churns. Nobody connects the Slack message, support ticket, and app store review describing the same problem. Even when they find a pattern, there's no way to prove it matters - no connection to revenue, churn risk, or renewal timelines. So the spec they write is based on gut feel, not data. By the time they finish, customers have already left.
+PMs drown in feedback from 6+ sources. They manually check Slack, Jira, support tickets, NPS surveys, app reviews, emails - trying to find patterns. Nobody notices checkout complaints spiked 40% until a customer churns. Nobody connects the Slack message, support ticket, and app store review describing the same problem. Even when they find a pattern, there's no way to prove it matters - no connection to revenue, churn risk, or renewal timelines. So the spec they write is based on gut feel, not data. By the time they finish, customers have already left.
 
 **Cursor tells engineers how to build. Context Engine tells PMs what to build.**
 
@@ -54,7 +54,7 @@ Feedback enters through:
 - **MCP connectors** - Live Slack (Demo mode or Live MCP)
 
 ### Step 3: Classification Pipeline
-Every piece of feedback goes through the same classification pipeline (not an agent — runs on ingest). A single Mistral API call (mistral-medium, JSON mode) returns:
+Every piece of feedback goes through the same classification pipeline (not an agent - runs on ingest). A single Mistral API call (mistral-medium, JSON mode) returns:
 
 ```json
 {
@@ -77,7 +77,7 @@ Classification uses the product wizard context. Noise gets tagged, NOT deleted.
 - **Customer linking:** Fuzzy match on author/sender against customer database
 
 ### Step 5: Explore + Search
-PM can browse feedback with ML badges, filter by product/feature/sentiment/segment, and use **semantic search** — "payment problems" finds "checkout losing cart", "Amex failing", "got charged twice". Powered by Mistral Embed + cosine similarity.
+PM can browse feedback with ML badges, filter by product/feature/sentiment/segment, and use **semantic search** - "payment problems" finds "checkout losing cart", "Amex failing", "got charged twice". Powered by Mistral Embed + cosine similarity.
 
 ### Step 6: Multi-Agent Chat
 3 specialized agents orchestrated by LangGraph:
