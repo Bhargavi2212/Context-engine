@@ -1,7 +1,6 @@
-# Context Engine - Mistral AI Hackathon Edition
+# Context Engine
 
-**Cursor for PMs** - an always-on feedback intelligence platform that ingests customer feedback from every source, classifies signal from noise, connects complaints to real revenue data, and generates production-ready engineering specs. Multi-agent. Powered by Mistral AI.
-
+**Cursor for PMs** - an always-on feedback intelligence platform that ingests customer feedback from every source, classifies signal from noise, connects complaints to real revenue data, and generates production-ready engineering specs. Multi-agent. 
 **Demo:** [Watch the demo on YouTube](https://youtu.be/sLkqz3SGcBA)
 
 ---
